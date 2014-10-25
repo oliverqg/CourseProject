@@ -51,6 +51,4 @@ The result of running the script is:
 >reshaped_data <-melt(data,id=c("subject","Activity"))  
 >data_mean <- dcast(reshaped_data,subject + Activity ~ variable,mean)  
 >write.table(data_mean,"./UCI HAR Dataset/cleandata.txt",row.names=FALSE,quote=FALSE)  
->reading features  
->trainingData <- read.table("./UCI HAR Dataset/train/X_train.txt")  
->testData <- read.table("./UCI HAR Dataset/test/X_test.txt")  
+
