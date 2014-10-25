@@ -19,14 +19,14 @@ The result of running the script is:
 >reading features  
 >trainingData <- read.table("./UCI HAR Dataset/train/X_train.txt")  
 >testData <- read.table("./UCI HAR Dataset/test/X_test.txt")  
-> 
->Merges the training and the test sets to create one data set.
->data <- rbind(trainingData,testData)
-> 
->Appropriately labels the data set with descriptive variable names. 
->columnNames<-read.table("./UCI HAR Dataset/features.txt")
->colnames(data)<-columnNames[,2]
-> 
+   
+>Merges the training and the test sets to create one data set.  
+>data <- rbind(trainingData,testData)  
+   
+>Appropriately labels the data set with descriptive variable names.  
+>columnNames<-read.table("./UCI HAR Dataset/features.txt")  
+>colnames(data)<-columnNames[,2]  
+  
 > Extracts only the measurements on the mean and standard deviation for each measurement.
 > meansData <- data[, grep("mean",colnames(data))]
 > stdData <-data[,grep("std",colnames(data))]
