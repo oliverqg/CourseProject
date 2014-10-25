@@ -20,10 +20,10 @@ The result of running the script is:
 trainingData <- read.table("./UCI HAR Dataset/train/X_train.txt")  
 testData <- read.table("./UCI HAR Dataset/test/X_test.txt")  
 
-'2. Merges the training and the test sets to create one data set.  
+>1. Merges the training and the test sets to create one data set.  
 data <- rbind(trainingData,testData)  
 
-4. Appropriately labels the data set with descriptive variable names.  
+>4. Appropriately labels the data set with descriptive variable names.  
 columnNames<-read.table("./UCI HAR Dataset/features.txt")  
 colnames(data)<-columnNames[,2]  
  
